@@ -1,6 +1,4 @@
 10030945 Torres Rosas Iván Rafael
-<<<<<<< HEAD
 10030590 Rivera Quevedo Hugo Francisco
-=======
 11030372 Perez Gomez Blanca Erendira
->>>>>>> c2e1709db6a281e248f315fb7b0cbefb7bb4d30a
+10030067 Cantero Ramírez Margarita
