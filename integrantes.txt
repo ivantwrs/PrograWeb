@@ -1,2 +1,6 @@
 10030945 Torres Rosas Iván Rafael
+<<<<<<< HEAD
 09030355 Paredes Machuca Angel
+=======
+11030372 Perez Gomez Blanca Erendira
+>>>>>>> c2e1709db6a281e248f315fb7b0cbefb7bb4d30a
