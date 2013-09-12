@@ -1,0 +1,37 @@
+/* 
+    Document   : main
+    Created on : 11-sep-2013, 18:22:49
+    Author     : CC1-M01
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html,
+button,
+input,
+select,
+textarea{
+    color:red;
+}
+body{
+    font-size: 1em;
+    line-height: 1.4;
+    font: 16px Helvetica;
+}
+
+.container{
+width: 90%;
+padding: 3px;
+margin:3px 6px;
+
+margin: 3px 6px 3px 6px;
+
+margin: 3px;
+
+margin-left: 6px;
+margin-right: 6px;
+margin-top: 3px;
+margin-bottom: 3px;
+
+
+}
