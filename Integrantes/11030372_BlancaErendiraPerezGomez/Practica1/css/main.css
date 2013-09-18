@@ -1,0 +1,146 @@
+html,
+button,
+input,
+selec,
+textarea{
+color:blak;
+
+}
+body{
+font-size:1em;
+line-height:1.4;
+font: 16px Helvetica;
+}
+.container{
+	width:0%;
+	pandding; 3px;
+
+	/*
+	Estas son las tres formas con las que podemos poner el margen
+	*/
+
+	margin:3px 6px;
+	margin:3px 6px 3px 6px;
+	margin:3px;
+
+	margin-left: 3px;
+	margin-right: 4 px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+}
+.container{
+
+width: 90%;
+margin:0 5%;
+
+}
+
+/*Color de sitio web*/
+.header-container{
+border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside{
+border-top: 20px solid #e44d26;
+}
+
+.title{
+	color: white;
+}
+
+/*MENU*/
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav a{
+	display: block; /*con este se ocultan las etiquetas*/
+	margin-bottom: 10px;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	background: #e44d26;
+}
+
+nav a:hover,
+van a:visited{
+	color: white; /*marca cuando una etiqueta ha sido visitada*/
+}
+
+nav a:hover{
+	text-decoration:underline;
+}
+
+nav li{/*seleciona las viñetas y es donde puedes agregar imagenes*/
+	list-style: none;
+}
+.main{
+	padding:30px 0;
+}
+
+.main article hl{
+	font-size: 2em;
+}
+
+.main aside{
+	color: white;
+	padding: 0px 5% 10px;
+}
+
+.footer-container footer{
+	color: white;
+	padding: 20px 0;
+}
+
+.clearfix:before,
+.clearfix:after{/*se esta limpiando las capas y se muestra en forma de tabla*/
+	content: "  ";
+	display: table;
+}
+
+@media only screen and (min-width: 480px){
+/*aplica a pantallas mas anchas de 480px*/
+	hl{
+		color:red;
+	}
+	
+	nav a{
+		float:left;
+		width:27%;
+		margin:0 1.7%;
+		padding:25px 2%
+		margin-bottom: 0;
+	}
+	
+	nav li:first-child a{
+		margin-left: 0;
+	}
+	nav li:last-child a{
+		display: inline;
+	}
+	
+}/*FIN DE 480px*/
+
+@media only screen and (min-width: 780px){
+
+	header-cantainer,
+	.main aside{
+		-webkit-box-shadow: 0 5px 10px ##aaa;/*este es para safari*/
+			-moz-box-shadow: 0 5px 10px ##aaa;/*este es para mozilla*/
+				  box-shadow: 0 5px 10px ##aaa;/*y aqui es cuando ya esta aprobado*/
+-moz-box-shadow: -18px  -9px  5px  #b87518;
+-webkit-box-shadow: -18px  -9px  5px  #b87518;
+box-shadow: -18px  -9px  5px  #b87518;
+
+
+	
+	}
+	
+	
+}
+
+
