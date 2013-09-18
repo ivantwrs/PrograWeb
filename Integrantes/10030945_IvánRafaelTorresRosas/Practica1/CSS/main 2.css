@@ -51,7 +51,9 @@ nav li{
    list-style: none; /*estilo de la viñeta*/
 }
 /*definicion de estilo para la resolucion mas baja*/
-
+.title{
+	font-family: 'Bad Script', cursive;
+		}
 
 .main{
     padding: 30px 0;
@@ -116,7 +118,6 @@ nav ul li{
 
 	.title{
 	font-family: 'Bad Script', cursive;
-	font-family: 'Londrina Outline', cursive;
 	}
 	
    header-container,
