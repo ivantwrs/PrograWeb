@@ -1,0 +1,107 @@
+html, 
+button,
+input,
+select,
+textarea{
+    color:gold;	
+}
+body{
+     font-size:1em;
+	 line-height:1.4;
+	 font: 16px Helvetica;
+}
+.container{
+    width: 90%;
+	margin: 0 5%;	
+}
+/* color del sitio web*/
+.header-container{
+border-bottom: 20px solid #e44d26; /*definicion del borde*/
+}
+.footer-container, 
+.main aside{
+     border-top:20px solid #e44d26;
+}
+.title{
+     color: blue;
+}
+/*MENU*/
+nav ul{
+margin: 0;
+padding: 0;
+}
+nav a{
+   display: block;/*muestra oculta un elemento none=oculto , block=muestro*/
+   margin-bottom: 10px;
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   background: #e44d26;
+}
+nav a:hover, /*controlar el tamaño cuando y cuando seda linnk*/
+van  a:visited{
+     color: blue;
+}
+nav a:hover {
+    text-decoration:underline; /*colocara una linea debajo del texto cuando se le pasa el ratón  */
+}
+nav li{
+   list-style: none; /*estilo de la viñeta*/
+}
+/*definicion deestilo para la resolucion mas baja*/
+.main{
+    padding: 30px 0;
+}	
+.main article h1{
+   font-size: 2em;
+}
+.main aside{
+   color: blue;
+   padding: 0px 5% 10px;
+}
+.footer-container footer{
+  color: blue;
+}
+.clearfix:before,
+.clearfix:after{ /*limpialas capas y las muestra en forma de tabla*/
+   content: " ";
+   display: table;
+}
+/*media query*/
+@media only screen and (min-width: 480px){
+/*aplica a pantallas anchas de  480px*/
+h1 {
+    color: red;
+  }
+nav a{
+     float:left;
+	 width:27%;
+	 margin:0 1.7%;
+	 padding:25px 2%;
+	 margin-bottom: 0;
+    }  
+nav li:first-child a{ /*primer nodo*/
+     margin-left:0;
+	}	
+nav li:last-child a{/*ultimo nodo*/
+     margin-right:0;
+	}	
+nav ul li{
+     display: inline;
+	}	
+}
+@media only screen and (min-width: 780px){
+   header-container,
+   .main aside{
+      -webkit-box-shadow: 0 5px 10px #aaa;/*borde sobre las capas google.safari*/
+	     -moz-box-shadow: 0 5px 10px #aaa;/*mozilla*/
+	          box-shadow: 0 5px 10px #aaa;/*cuando ya se haya aprobado el estandar*/
+	  /*de la pagina css3maker*/
+	  -moz-box-shadow: -17px 10px 5px #d67428;
+      -webkit-box-shadow: -17px 10px 5px #d67428;
+       box-shadow: -17px 10px 5px #d67428;		  
+     /*debemos deifnir lostres mientras no este aprobada el css*/
+   }
+}
