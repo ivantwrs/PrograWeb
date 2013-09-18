@@ -1,0 +1,29 @@
+html,
+button
+input,
+select,
+textarea{
+	color:green;
+}
+
+body{
+	font-size:1em:
+	line-height:1.4;
+	font:16px Helvetica;
+}
+.container{
+	width:90%;
+	/* Existen 3 formas de trabajar con el margen y el padding*/
+	
+	/*EL primero solo con 2 las 2 primeras espara arriba y abajo y el otro valor para los laterales */
+	margin:3px 6px;
+	
+	/* puedes especificar cada uno de los margene/padding*/
+	margin-left:6px;
+	margin-right:6px;
+	margin-top:3px;
+	margin-bottom:3px;
+	
+	/*Especifica el valor para los 4 lados*/
+	margin:3px;
+}
