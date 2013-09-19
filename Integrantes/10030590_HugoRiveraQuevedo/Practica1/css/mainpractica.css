@@ -62,8 +62,11 @@ nav li{/*para viñeta*/
 	color:red;
 	padding:0px 5% 10px;
 }
-.footer-conteiner footer{
+.footer-container footer{
 	color:white;
+}
+.footer-container footer{
+	background:-webkit-gradient(radial, 165 0, 0, 220 -257, 465, from(#0051C0), to(#E84E28))
 }
 .clearfix:before,
 .clearfix:after{
@@ -73,10 +76,16 @@ nav li{/*para viñeta*/
 .clearfix:after{
 	clear:both;
 }
+.title{
+	font-family: 'Metamorphous', cursive;
+}
 @media only screen and (min-width:480px){
 /*aplica a pantallas mayores a 480px*/
+	.title{
+		font-family: 'Crafty Girls', cursive;
+	}
 	h1{
-		color:red;
+		color:green;
 	}
 	nav a{
 		float:left;
@@ -94,6 +103,21 @@ nav li{/*para viñeta*/
 	nav ul li{
 		display:inline;
 	}
+	.main article{
+	border:dashed 12px #1d90b3;
+	-moz-border-radius-topleft: 61px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:75px;
+	-webkit-border-top-left-radius:61px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:75px;
+	border-top-left-radius:61px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:75px;
+	}	
 }
 @media only screen and (min-width:780px){
 	header-container,
@@ -109,6 +133,7 @@ nav li{/*para viñeta*/
 		box-shadow: 7px 16px 42px #2e3857;
 	}
 	.title{
+		font-family: 'Finger Paint', cursive;
 		float:left;
 	}
 	nav{
@@ -116,11 +141,11 @@ nav li{/*para viñeta*/
 		width:38%;
 	}
 	.main article{
-		float:left;
-		width:58%;
+		float:right;
+		width:30%;
 	}
 	.main aside{
-		float:right;
+		float:left;
 		width:28%;
 	}
 }
