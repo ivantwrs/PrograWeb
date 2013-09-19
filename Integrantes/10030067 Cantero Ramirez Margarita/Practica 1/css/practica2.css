@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea{
-    color:gold;	
+    color:black;	
 }
 body{
      font-size:1em;
@@ -16,14 +16,27 @@ body{
 }
 /* color del sitio web*/
 .header-container{
-border-bottom: 20px solid #e44d26; /*definicion del borde*/
+border-bottom: 20px solid #1a86d9; /*definicion del borde*/
 }
 .footer-container, 
 .main aside{
-     border-top:20px solid #e44d26;
+     font-family: 'Waiting for the Sunrise', cursive;
+     border-top:20px solid #1a86d9; 
+
+    border:dashed 3px #174dd4;
+    -moz-border-radius: 43px;
+    -webkit-border-radius: 43px;
+    border-radius: 43px;
+
+
+
 }
 .title{
-     color: blue;
+     font-family: 'Waiting for the Sunrise', cursive;
+     color: #174dd4;
+	 text-shadow:5px 5px 5px #d9991a;
+	 
+	 
 }
 /*MENU*/
 nav ul{
@@ -38,11 +51,11 @@ nav a{
    text-decoration: none;
    font-weight: bold;
    color: white;
-   background: #e44d26;
+   background: #1a86d9;
 }
 nav a:hover, /*controlar el tamaño cuando y cuando seda linnk*/
 van  a:visited{
-     color: blue;
+     color: black;
 }
 nav a:hover {
     text-decoration:underline; /*colocara una linea debajo del texto cuando se le pasa el ratón  */
@@ -55,14 +68,15 @@ nav li{
     padding: 30px 0;
 }	
 .main article h1{
+    font-family: 'Waiting for the Sunrise', cursive;
    font-size: 2em;
 }
 .main aside{
-   color: blue;
+   color: black;
    padding: 0px 5% 10px;
 }
 .footer-container footer{
-  color: blue;
+  color: black;
 }
 .clearfix:before,
 .clearfix:after{ /*limpialas capas y las muestra en forma de tabla*/
@@ -77,7 +91,7 @@ nav li{
 @media only screen and (min-width: 480px){
 /*aplica a pantallas anchas de  480px*/
 h1 {
-    color: red;
+    color: black;
   }
 nav a{
      float:left;
@@ -94,7 +108,16 @@ nav li:last-child a{/*ultimo nodo*/
 	}	
 nav ul li{
      display: inline;
-	}	
+	}
+.main aside{
+    
+	
+    border:dashed 5px #d94c0b;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+	
 }
 @media only screen and (min-width: 780px){
    header-container,
@@ -110,17 +133,19 @@ nav ul li{
    }
    .title{
     float: left;
+	text-shadow:5px 5px 5px #d9991a;
    }
    nav{
     float: right;
 	width:38%;
    }
    .main article{
-     float: left;
-	 width: 57%;
+      font-family: 'Waiting for the Sunrise', cursive;
+     float: right;
+	 width: 30%;
    }
    .main aside{
-     float: right;
+     float: left;
 	 width: 28%;
    }
    
