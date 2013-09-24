@@ -108,6 +108,10 @@ nav li{/*seleciona las viñetas y es donde puedes agregar imagenes*/
 
 @media only screen and (min-width: 480px){
 /*aplica a pantallas mas anchas de 480px*/
+	.title{
+		font-family: 'Ribeye', cursive;
+	}
+	
 	h1{
 		color:blue;
 	}
@@ -130,7 +134,9 @@ nav li{/*seleciona las viñetas y es donde puedes agregar imagenes*/
 }/*FIN DE 480px*/
 
 @media only screen and (min-width: 780px){
-
+.title{
+		font-family: 'Playball', cursive;
+	}
 	header-cantainer,
 	.main aside{
 		-webkit-box-shadow: 0 5px 10px ##aaa;/*este es para safari*/
@@ -151,12 +157,12 @@ box-shadow: -18px  -9px  5px  #b87518;
 	}
 	
 	.main article{
-		float:left;
+		float:right;
 		width:57%;
 		}
 		
 	.main aside{
-	float:right;
+	float:left;
 	width:28%;
 	}
 	
