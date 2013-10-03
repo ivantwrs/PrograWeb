@@ -24,10 +24,11 @@
     <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
     <script src="js/jquery.ui.touch-punch.min.js"></script>
 	
-	<script src="jquery-ui-1.10.3.custom\development-bundle\ui\jquery.ui.datepicker"> </script>
+	<script src="jquery-ui-1.10.3.custom/development-bundle/ui/jquery.ui.datepicker.js"> </script>
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-	<script>(funtion(){
-	$("#fecha-nacimiento").datepicker();
+	<script>
+	$(function(){
+		$("#fecha-nacimiento").datepicker();
 	});
 	</script>
   </head>
@@ -47,7 +48,7 @@
 		<input type="text" id="correo" name="correo" class="form-control" required /></input>
 		
 		<label for="fecha-nacimiento">Frcha de nacimiento:</label>
-		<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control hasDatepiker" required /></input>
+		<input type="text" id="fecha-nacimiento" name="fecha-nacimiento" class="hasDatepiker form-control " required /></input>
 		
 		<br>
 		
