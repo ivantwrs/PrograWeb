@@ -2,3 +2,13 @@
 .color2{background-color:blue;}
 .color3{background-color:pink;}
 .color4{background-color:green;}
+
+.h1 { color: blue; font-size: 1em; font-family: Verdana; }
+
+.h2{color:red}
+
+h1{
+color:pink;
+}
+
+a{color:pink;}
