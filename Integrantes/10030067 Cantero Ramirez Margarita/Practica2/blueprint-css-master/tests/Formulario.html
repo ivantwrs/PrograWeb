@@ -29,22 +29,24 @@
 	<script>
 	   $(document).ready(function(){
 	   var url=document.location.href;
-	   alert(url);
+	   //alert(url);
 	   var url2=url.split('?') [1];
-	   alert(url2);
+	   //alert(url2);
    	   var  datos =url2.split('&');
 	   var x=datos.length;
-	   var =html="";
+	   var html="";
 	   
 	   for(var i=0; i<x;i++){
 			      html= html+ '<p>' + datos[i].split('=')[0]+ '</p>';  
 				  html= html + '<p>' + datos[i].split('=')[1]+ '</p>'; 
 			   }
-	           alert(html);
+	           //alert(html);
 			   
-		 $("#fecha-nacimiento" ).datepicker();
-		 
-		 $("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
+			    $("#resultado").hide();
+			    $("#resultado").html(html);
+			    $("#resultado").show('slow');  
+		        $("#fecha-nacimiento" ).datepicker();
+		        $("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
 	 
 	    });
 	  
@@ -55,6 +57,8 @@
   <body>
   <div class= "container">
       	   
+		 <div id="resultado"> </div>		 
+		 
        <form action="" method ="GET" > 
 	    <label for="nombre">Nombre: </label>
 	    <input type="text" id="nombre" name="nombre" class="form-control" required autofocus />
