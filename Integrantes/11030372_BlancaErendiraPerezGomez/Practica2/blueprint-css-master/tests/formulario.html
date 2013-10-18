@@ -29,8 +29,19 @@
 	<script src="jquery-ui-1.10.3.custom/development-bundle/ui/jquery.ui.datepicker.js"> </script>
 	
 	<script >
-	$(fuction (){
+	
+	var url=document.location.href
+	//alert(url);
+	var url2=url.split('?')[1];
+	//alert(url2)	
+	var datos=url2.split('&');	
+		var x=datos.length;
+
+	
+	$(function (){
 		$("#fecha-nacimiento").datepicker();
+		$("select").selectpicker({style:'btn-hg btn-primary', menuStyle:'dropdown-inverse'})
+		
 	});
 	</script>
 	
@@ -39,6 +50,12 @@
   <body>
   
 	<div class="container">
+	
+	<script>
+		for(var i=0; i < x; i++){
+			document.write('<p>'+datos[i]+'</p>');}
+			
+	</script>
 
 	
 	<!--ETIQUETA FORM METODO GET NOS SIRVE PARA ENVIAR INFORMACION ATRAVEZ DE LA URL Y POST POR MEDIO DE LA PAGUINA-->
@@ -57,6 +74,45 @@
 		
 		<label for="fecha-nacimiento"> Fecha de Nacimiento </label>
 		<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control" required/>
+		
+		<label for="fecha-nacimiento"> Genero </label>
+			<label class="radio"> Femenino:
+			<input type="radio"  name="genero" value="F" data-toggle="radio">
+			</label>
+			
+			<label class="radio">Masculino:
+			<input type="radio"  name="genero" value="M" data-toggle="radio">
+			</label>
+			
+		<label for="comentarios"> Comentarios </label>
+		<textarea name="comentarios" id="comentarios" >
+		</textarea>
+		
+	
+		<label class="checkbox" for="checkbox1">
+		<input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+		Checkbox
+		</label>
+			
+			<label class="checkbox" for="checkbox2">
+			<input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+			Checkbox2
+			</label>
+				
+				<label class="checkbox" for="checkbox3">
+				<input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">
+				Checkbox3
+				</label>
+		
+		<select name="estados">
+		<option value="guanajuato">Guanajuato</option>
+		<option value="mexico">Mexico</option>
+		<option value="jalisco">Jalisco</option>
+		<option value="etc">Etc...</option>
+		</select>
+
+			
+			<br>
 		
 		
 			<input type="submit" value="Enviar" class="btn btn-primary" required >
