@@ -29,16 +29,40 @@
 	<script src="jquery-ui-1.10.3.custom/development-bundle/ui/jquery.ui.datepicker.js">
 	</script>
     
-	  <script>
+	<script>
+		var url=document.location.href;
+		//alert(url);
+		var url2= url.split('?')[1];
+		//alert(url2);
+		
+		var datos=url2.split('&');	
+		var x=datos.length;
+		
+			for (var i=0;i<x ;i++){
+				//alert(datos[i]);
+			}
+			
 	  $(function() {
 		$( "#fecha-nacimiento" ).datepicker();
+		$("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
 	  });
 	  </script>
 	  </head>
   <body>
 	
 	<div class='container'>
-	<form action="datos.html" method="POST">  <!-- method Del protocolo http GET envía la información atra vez de la url y POST la envía atravez del puerto-->
+	
+	<script>
+	for (var i=0;i<x ;i++){
+			
+			var dato=document.write('<hr>'+datos[i]+'<hr>');
+			var valor=document.write(datos[i].split('=')[0]);
+			
+			}
+	</script>
+	
+	
+	<form action="" method="GET">  <!-- method Del protocolo http GET envía la información atra vez de la url y POST la envía atravez del puerto-->
 		
 		<label for="nombre">Apellido Paterno: </label>
 		<input type="text" id="apellidop" name="apellidop"class="form-control" required autofocus/>
@@ -55,11 +79,51 @@
 		<label for="Fecha-nacimiento">Fecha de Nacimiento: </label>
 		<input type="date" id="fecha-nacimiento" name="fecha-nacimiento"class="form-control" required/>
 		
+		<label for="genero">Genero:</label><br>
+		<label class="radio">Femenino:
+			<input type="radio" name="genero" value="F" data-toggle="radio" checked>
+		</label >
+		<label class="radio">Masculino:
+			<input type="radio" name="genero" value="M" data-toggle="radio">
+		</label>
 		
 		<br>
 		<br>
+		<label for="Comentarios">Comentarios:</label><br>
+		<textarea name=""comentarios id="comentarios"></textarea>
+		
+		<label class="checkbox" for="checkbox1">
+		  <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+		  Checkbox
+		</label>
+		
+		<label class="checkbox" for="checkbox2">
+		  <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+		  Checkbox1
+		</label>
+		
+		<label class="checkbox" for="checkbox3">
+		  <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">
+		  Checkbox2
+		</label>
+		
+		<label class="checkbox" for="checkbox4">
+		  <input type="checkbox" value="" id="checkbox4" data-toggle="checkbox">
+		  Checkbox3
+		</label>
+
+		<select name="estados">
+			<option value="001">Guanajuato</option>
+			<option value="002">México</option>
+			<option value="003">Jalisco</option>
+			<option value="004">Yucatán</option>
+			<option value="005">Nuevo León</option>
+		</select>
+	
+		<br>
+		<br>
 		<center>
-		<input type="submit" value="Presioname suavecito" class="btn btn-hg btn-primary"/>
+		<input type="submit" value="Enviar" class="btn btn-hg btn-primary"/>
 		</center>
 		
 		
