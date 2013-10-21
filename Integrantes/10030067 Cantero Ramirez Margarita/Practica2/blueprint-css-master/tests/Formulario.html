@@ -27,17 +27,39 @@
 	
 	<script src="jquery-ui-1.10.3.custom/development-bundle/ui/jquery.ui.datepicker.js"></script>
 	<script>
-	   $(function() {
-	      $("#fecha-nacimiento" ).datepicker();
-	   });
+	   $(document).ready(function(){
+	   var url=document.location.href;
+	   //alert(url);
+	   var url2=url.split('?') [1];
+	   //alert(url2);
+   	   var  datos =url2.split('&');
+	   var x=datos.length;
+	   var html="";
+	   
+	   for(var i=0; i<x;i++){
+			      html= html+ '<p>' + datos[i].split('=')[0]+ '</p>';  
+				  html= html + '<p>' + datos[i].split('=')[1]+ '</p>'; 
+			   }
+	           //alert(html);
+			   
+			    $("#resultado").hide();
+			    $("#resultado").html(html);
+			    $("#resultado").show('slow');  
+		        $("#fecha-nacimiento" ).datepicker();
+		        $("select").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
+	 
+	    });
+	  
 	</script> 
 	
   </head>
     
   <body>
   <div class= "container">
-	 
-      <form action="datos.html" method ="POST" > 
+      	   
+		 <div id="resultado"> </div>		 
+		 
+       <form action="" method ="GET" > 
 	    <label for="nombre">Nombre: </label>
 	    <input type="text" id="nombre" name="nombre" class="form-control" required autofocus />
 		
@@ -53,7 +75,39 @@
 		<label for="fecha-nacimiento">Fecha de Nacimiento: </label>
 		<input type="date" id="fecha-nacimiento" name="fecha-nacimiento" class="form-control" required />
 		
-
+		<label for= "genero" > Genero:</label><br/> <!--para que solo seleccione un radio debe d tener el mismo name -->
+		<label class="radio">Femenino:
+		<input type="radio" name="genero" value="F" data-toggle="radio">
+	    </label>
+		<label class="radio">Masculino:
+		<input type="radio" name="genero" value="M" data-toggle="radio">
+        </label>
+		
+		<label for="comentarios">Comentarios:</label>
+		<textarea name="comentarios" id="comentarios">
+		</textarea>
+		
+		
+		<label class="checkbox" for="checkbox1">
+        <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+         Checkbox
+         </label>
+		 <label class="checkbox" for="checkbox2">
+         <input type="checkbox" value="" id="checkbox2" data-toggle="checkbox">
+         Checkbox2
+        </label>
+        <label class="checkbox" for="checkbox3">
+        <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox">
+         Checkbox3
+        </label>
+		
+        <select name="estados">
+		   <option value="001">Guanajuato</option>
+		   <option value="002">México</option>
+		   <option value="003">Jalisco</option>
+		   <option value="004">Etc</option>
+		</select>
+		
 		<br>
 		<input type= "submit" value="Enviar" class= "btn btn-hg btn-primary"  />
 		
